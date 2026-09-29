@@ -1,0 +1,14 @@
+[package]
+org = "mohandemo"
+name = "property_search_service"
+version = "0.1.0"
+distribution = "2201.13.6"
+title = "property-search-service"
+
+[build-options]
+sticky = true
+
+[[dependency]]
+org = "ballerina"
+name = "mcp"
+version = "1.3.0"
