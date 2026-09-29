@@ -276,7 +276,7 @@ function queryPropertyDetails(int propertyId) returns Property|error {
 
 // Get available property types with counts
 function queryPropertyTypes() returns PropertyTypeInfo[]|error {
-    sql:ParameterizedQuery typesQuery = `SELECT category, property_type, COUNT(*) as count 
+    sql:ParameterizedQuery typesQuery = `SELECT category, property_type AS propertyType, COUNT(*) as count 
         FROM properties WHERE status = 'ACTIVE' 
         GROUP BY category, property_type 
         ORDER BY category, property_type`;
