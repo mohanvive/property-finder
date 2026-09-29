@@ -1,6 +1,6 @@
 import ballerina/mcp;
 
-listener mcp:StreamableHttpListener mcpListener = check new (mcpPort);
+listener mcp:StreamableHttpListener mcpListener = check new (9010);
 
 @mcp:StreamableHttpServiceConfig {
     info: {
